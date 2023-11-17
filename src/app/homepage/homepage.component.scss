@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #36454F;
+}
+.second{
+    background-color: rgb(42, 212, 255);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 50px auto; /* Added top and bottom margin of 50px */
+}
+
+.container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .img-box {
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p {
+    color: #333;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.container .card .content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+#third {
+    margin-top: 50px; /* Adjust the value to increase or decrease the gap */
+}
+
+#third .container-xxl {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+#third h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#third p {
+    font-size: 16px;
+}
+
+#third .row.gy-2 {
+    margin-top: 20px;
+}
+
+#third .col-sm-6 {
+    font-size: 14px;
+}
+
+#third .btn-primary {
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 991px) {
+    #third .container-xxl {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    #third h1 {
+        font-size: 24px;
+    }
+    
+    #third p {
+        font-size: 14px;
+    }
+    
+    #third .col-lg-6 {
+        margin-bottom: 20px;
+    }
+}
+
+section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.course-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+}
+
+.course-item img {
+    width: 100%;
+    height: auto;
+}
+
+.course-item .btn {
+    border-radius: 30px;
+}
+
+.course-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.course-item small {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .course-item {
+        margin-bottom: 30px;
+    }
+}
+
+.course-item {
+margin-left: 50px;
+}
+
+.team-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Increase the gap between cards */
+    width: 500px;
+  }
+  
+  .team-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-item .btn-primary {
+    color: #fff;
+  }
+  
+  .team-item h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .team-item small {
+    color: #888;
+  }
+  
+  /* Adjust card size */
+  @media (min-width: 768px) {
+    .team-item img {
+      height: 250px; /* Increase the card height */
+      object-fit: cover;
+    }
+  
+    .team-item .text-center {
+      padding: 20px;
+    }
+  }
+  .carousel-inner .team-item {
+    transition: transform 0.3s;
+  }
+  
+  .carousel-inner .team-item:hover {
+    transform: scale(1.1);
+  }
+  

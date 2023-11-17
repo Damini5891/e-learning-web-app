@@ -1,0 +1,132 @@
+<app-carousel></app-carousel>
+
+  <div class="container">
+    <div class="card" style="--clr: #009688">
+        <div class="img-box">
+            <img src="assets/images/home-cover-one.jpg">
+        </div>
+        <div class="content">
+            <h2>Lectures</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                repellat quisquam alias doloremque!
+            </p>
+            <a href="">Read More</a>
+        </div>
+    </div>
+    <div class="card" style="--clr: #FF3E7F">
+        <div class="img-box">
+            <img src="assets/images/home-cover-one.jpg">
+        </div>
+        <div class="content">
+            <h2>Notes</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                repellat quisquam alias doloremque!
+            </p>
+            <a href="">Read More</a>
+        </div>
+    </div>
+    <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+            <img src="assets/images/home-cover-one.jpg">
+        </div>
+        <div class="content">
+            <h2>Certifications</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto, hic? Magnam eum error saepe doloribus corrupti
+                repellat quisquam alias doloremque!
+            </p>
+            <a href="">Read More</a>
+        </div>
+    </div>
+</div>
+
+
+<div #about class="d-flex justify-content-center mt-5  bg-blue-lighter">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="assets/images/home-cover-one.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 px-5">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to eLEARNING</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>International Certificate</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Skilled Instructors</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Online Classes</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>International Certificate</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+<div class="container py-5">
+  <div id="instructors-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="text-center">
+          <h2>Our Instructors</h2>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div *ngFor="let instructor of instructors" class="col-lg-4 col-md-6">
+            <div class="team-item bg-light p-3">
+              <div class="overflow-hidden">
+                <img class="img-fluid" [src]="instructor.image" alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ instructor.name }}">
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">{{ instructor.name }}</h5>
+                <small>{{ instructor.designation }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button class="btn btn-primary">
+      Want to join us?
+    </button>
+  </div>
+</div>
+<app-contact></app-contact>
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+

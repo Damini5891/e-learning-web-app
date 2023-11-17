@@ -1,0 +1,20 @@
+@import 'src/styles.scss';
+
+.navbar {
+  .navbar-brand {
+    font-size: 32px;
+    padding-left: 50px;
+  }
+
+  .nav-item {
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 20px;
+
+    &.dropdown {
+      .dropdown-menu {
+        min-width: 8rem;
+      }
+    }
+  }
+}
