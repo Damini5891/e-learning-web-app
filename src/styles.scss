@@ -1,6 +1,10 @@
 @import 'bootstrap/scss/bootstrap';
 @import '~bootstrap/dist/css/bootstrap.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $color-white: #ffffff;
 $color-off-white: #f5f5f5;
 $color-blue-grey: #2e61a4;
